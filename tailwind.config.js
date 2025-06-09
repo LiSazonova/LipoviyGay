@@ -4,16 +4,16 @@ const { heroui } = require("@heroui/theme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
-        caveat: ['Caveat', 'cursive'],
+        pacifico: ['Pacifico', 'cursive'],
       },
     },
   },
-  darkMode: "class",
   plugins: [heroui()],
 };
