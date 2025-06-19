@@ -150,18 +150,34 @@
 import { motion } from 'framer-motion';
 
 const items = [
-  { type: 'text', title: 'Закрита територія', desc: 'Територія з охороною...' },
-  { type: 'image', img: '/advantages/advantages4.jpg', alt: 'Image 1' },
-  { type: 'text', title: 'Чисте повітря', desc: 'Поруч лиман і тиша...' },
-  { type: 'image', img: '/advantages/advantages.jpg', alt: 'Image 2' },
-  { type: 'text', title: 'Сучасна архітектура', desc: 'Естетичні будинки...' },
-  { type: 'image', img: '/advantages/advantages1.jpg', alt: 'Image 3' },
-  { type: 'text', title: 'Паркомісця', desc: 'Асфальт і зручність...' },
-  { type: 'image', img: '/advantages/advantages5.jpg', alt: 'Image 4' },
   {
     type: 'text',
-    title: 'Готові до заселення',
-    desc: 'Все введено в експлуатацію.',
+    title: 'Закрита територія',
+    desc: 'Територія з контролем доступу, охороною та цілодобовим відеоспостереженням',
+  },
+  { type: 'image', img: '/advantages/2.jpg', alt: 'Image 1' },
+  {
+    type: 'text',
+    title: 'Розвинена інфраструктура',
+    desc: 'Близькість до Прилиманського дозволяє швидко дістатися до необхідної інфраструктури , такої як магазини, школа, дитячий садок, медичні заклади та інших важливих об’єктів. ',
+  },
+  { type: 'image', img: '/advantages/advantages.jpg', alt: 'Image 2' },
+  {
+    type: 'text',
+    title: 'Чисте повітря та спокій',
+    desc: 'Зручне розташування дозволяє насолоджуватися спокоєм і тишею на березі лиману, далеко від міської метушні, водночас залишаючись у пішій досяжності від усіх необхідних сервісів і інфраструктури.',
+  },
+  { type: 'image', img: '/advantages/advantages1.jpg', alt: 'Image 3' },
+  {
+    type: 'text',
+    title: 'Сучасна архітектура',
+    desc: 'Архітектура котеджів гармонійно вписується в природній ландшафт, створюючи атмосферу затишку та спокою.',
+  },
+  { type: 'image', img: '/advantages/1.jpg', alt: 'Image 4' },
+  {
+    type: 'text',
+    title: 'Автономність',
+    desc: 'Генератор для загальних потреб. Накопичувачі води. Індивідуальне газове опалення.',
   },
 ];
 
@@ -189,7 +205,7 @@ export default function GridAdvantages() {
           </p>
           <h2 className="text-4xl font-semibold mt-2">
             Переваги проживання у{' '}
-            <span className="text-yellow-500">"Липовому Гаї"</span>
+            <span className="text-yellow-500">КМ Липовий Гай</span>
           </h2>
         </div>
 
@@ -204,7 +220,7 @@ export default function GridAdvantages() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
-                className="p-4 bg-white text-center transform transition duration-300 hover:scale-[1.02] hover:shadow-md"
+                className="flex flex-col items-center justify-center p-4 bg-white text-center transform transition duration-300 hover:scale-[1.02] hover:shadow-md"
               >
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>

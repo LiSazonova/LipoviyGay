@@ -106,7 +106,7 @@
 // export default Hero;
 
 import { motion } from 'framer-motion';
-import heroImage from '../assets/hero_testing.jpg';
+import heroImage from '../assets/hero_testing.png';
 import Header from './Header';
 
 const Hero = () => {
@@ -132,17 +132,14 @@ const Hero = () => {
           className="text-white max-w-[700px]"
         >
           <h1 className="text-4xl md:text-[60px] uppercase font-bold mb-6 leading-tight text-yellow-400">
-            Липовий Гай
+            КМ Липовий Гай
           </h1>
           <p className="text-lg md:text-3xl mb-6">
             Комфорт. Якість. Спокій поруч з природою.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="border border-white text-base md:text-lg py-3 px-6 rounded-md bg-white/20 backdrop-blur-md hover:bg-white/30 hover:text-yellow-400 transition">
-              Дізнатись більше
-            </button>
-            <button className="text-base md:text-lg py-3 px-6 rounded-md border border-white hover:text-yellow-400 hover:bg-white/20 transition">
-              Зв’язатись з нами
+            <button className="border border-white text-[18px] py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:bg-white/30  transition">
+              <a href="#contact">Зв’язатись з нами</a>
             </button>
           </div>
         </motion.div>

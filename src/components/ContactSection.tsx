@@ -53,33 +53,33 @@
 // export default ContactSection;
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-white py-20 px-4">
+    <section id="contact" className="bg-[#3A8278] py-20 px-4">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl font-bold text-white mb-8">
             Зв'язатись з нами
           </h2>
-          <form className="flex flex-col gap-4">
+          <form className="flex flex-col gap-4 text-white">
             <input
               type="text"
               placeholder="Ваше ім’я"
-              className="p-4 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-yellow-400"
+              className="p-4 border border-white rounded-xl outline-none "
             />
             <input
               type="tel"
               placeholder="Телефон"
-              className="p-4 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-yellow-400"
+              className="p-4 border border-white rounded-xl outline-none focus:ring-2 focus:ring-yellow-400"
             />
             <textarea
               rows={4}
               placeholder="Ваше повідомлення"
-              className="p-4 border border-gray-300 rounded-xl outline-none resize-none focus:ring-2 focus:ring-yellow-400"
+              className="p-4 border border-white rounded-xl outline-none resize-none focus:ring-2 focus:ring-yellow-400"
             />
             <button
               type="submit"
-              className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 px-6 rounded-xl transition"
+              className="border border-white text-[18px] text-white font-semibold py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:bg-white/30  transition"
             >
-              Надіслати
+              <a href="#contact">Надіслати</a>
             </button>
           </form>
         </div>
