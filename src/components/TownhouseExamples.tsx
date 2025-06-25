@@ -68,7 +68,11 @@ const TownhouseExamples = () => {
   ];
 
   return (
-    <section id="townhouses" className="w-full bg-[#3A8278] py-20 px-4">
+    <section
+      data-theme="dark"
+      id="townhouses"
+      className="w-full bg-[#3A8278] py-20 px-4"
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-8 text-center">
           Таунхауси

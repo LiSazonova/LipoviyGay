@@ -17,7 +17,7 @@ const Header = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="absolute top-0 left-0 w-full z-20"
       >
-        <div className="max-w-[1600px] mx-auto px-6 pt-8 pb-8 flex justify-between items-center text-white">
+        <div className=" mx-auto px-6 pt-8 pb-8 flex justify-between items-center text-white bg-[#3a8278] backdrop-blur-md">
           {/* Навигация */}
           <ul className="hidden md:flex items-center gap-6 text-[18px] font-medium">
             {navLinks.map((link) => (

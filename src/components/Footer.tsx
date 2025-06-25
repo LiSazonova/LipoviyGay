@@ -76,11 +76,14 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 pt-16 pb-8 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-        <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Південний центр нерухомості
+    <footer
+      data-theme="dark"
+      className="bg-[#3A8278] text-white pt-16 pb-8 px-4"
+    >
+      <div className="max-w-6xl mx-auto flex flex-row justify-between gap-10">
+        <div className="max-w-[500px]">
+          <h3 className="text-2xl font-bold mb-4">
+            Південний Центр Нерухомості
           </h3>
           <p className="text-sm leading-relaxed">
             Надійна нерухомість в кращих районах Півдня України. Таунхауси,
@@ -89,12 +92,12 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold text-gray-900 mb-4">Контакти</h4>
+          <h4 className="text-lg font-semibold mb-4">Контакти</h4>
           <ul className="text-sm space-y-2">
             <li>
               📞{' '}
-              <a href="tel:+380123456789" className="hover:underline">
-                +38 (012) 345-67-89
+              <a href="tel:+380979748002" className="hover:underline">
+                +38 (097) 974-80-02
               </a>
             </li>
             <li>
@@ -108,9 +111,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold text-gray-900 mb-4">
-            Швидкі посилання
-          </h4>
+          <h4 className="text-lg font-semibold mb-4">Швидкі посилання</h4>
           <ul className="text-sm space-y-2">
             <li>
               <a href="#about" className="hover:underline">
@@ -135,7 +136,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="mt-12 border-t pt-4 text-center text-xs text-gray-500">
+      <div className="mt-12 border-t pt-4 text-center text-xs text-white">
         © {new Date().getFullYear()} RunFox. Усі права захищені.
       </div>
     </footer>

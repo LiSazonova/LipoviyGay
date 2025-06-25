@@ -53,32 +53,31 @@
 // export default ContactSection;
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-[#3A8278] py-20 px-4">
+    <section
+      data-theme="light"
+      id="contact"
+      className="bg-white text-black py-20 px-4"
+    >
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-4xl font-bold text-white mb-8">
-            Зв'язатись з нами
-          </h2>
-          <form className="flex flex-col gap-4 text-white">
+          <h2 className="text-4xl font-bold  mb-8">Зв'язатись з нами</h2>
+          <form className="flex flex-col gap-4 text-black ">
             <input
               type="text"
               placeholder="Ваше ім’я"
-              className="p-4 border border-white rounded-xl outline-none "
+              className="p-4 border border-black rounded-xl outline-none focus:border-[#3A8278]"
             />
             <input
               type="tel"
               placeholder="Телефон"
-              className="p-4 border border-white rounded-xl outline-none focus:ring-2 focus:ring-yellow-400"
+              className="p-4 border border-black rounded-xl outline-none focus:border-[#3A8278]"
             />
             <textarea
               rows={4}
               placeholder="Ваше повідомлення"
-              className="p-4 border border-white rounded-xl outline-none resize-none focus:ring-2 focus:ring-yellow-400"
+              className="p-4 border border-black rounded-xl outline-none resize-none focus:border-[#3A8278]"
             />
-            <button
-              type="submit"
-              className="border border-white text-[18px] text-white font-semibold py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:bg-white/30  transition"
-            >
+            <button className="border border-white text-[18px] text-white py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:border-[#3A8278] hover:bg-transparent hover:text-black transition">
               <a href="#contact">Надіслати</a>
             </button>
           </form>

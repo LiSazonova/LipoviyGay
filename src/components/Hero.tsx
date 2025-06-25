@@ -106,12 +106,15 @@
 // export default Hero;
 
 import { motion } from 'framer-motion';
-import heroImage from '../assets/hero_testing.png';
+import heroImage from '../assets/1.jpg';
 import Header from './Header';
 
 const Hero = () => {
   return (
-    <section className="w-full relative h-[1000px] overflow-hidden">
+    <section
+      data-theme="dark"
+      className="w-full relative h-[1000px] overflow-hidden"
+    >
       {/* Фон */}
       <div
         className="absolute inset-0 bg-cover bg-bottom"

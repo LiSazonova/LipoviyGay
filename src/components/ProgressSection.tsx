@@ -128,7 +128,7 @@ const ProgressTimeline = () => {
   ];
 
   return (
-    <section id="progress" className="w-full bg-white py-20 px-4">
+    <section id="progress" className="w-full bg-white py-20 px-4 hidden">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
           Хід будівництва

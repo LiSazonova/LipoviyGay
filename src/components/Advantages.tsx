@@ -196,7 +196,7 @@ const variants = {
 
 export default function GridAdvantages() {
   return (
-    <section className="w-full bg-gray-100 py-20">
+    <section data-theme="light" className="w-full bg-gray-100 py-20">
       <div className="max-w-[1200px] mx-auto px-6">
         {/* Заголовок */}
         <div className="mb-12 text-center">
@@ -248,7 +248,10 @@ export default function GridAdvantages() {
         {/* CTA */}
         <div className="mt-12 text-center">
           <h3 className="text-xl font-semibold mb-2">Потрібна консультація?</h3>
-          <a
+          <button className="border border-white text-[18px] text-white py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:border-[#3A8278] hover:bg-transparent hover:text-black transition">
+            <a href="#contact">Зв’язатись з нами</a>
+          </button>
+          {/* <a
             href="#contact"
             className="inline-flex items-center gap-1 text-black font-medium hover:text-yellow-500 transition"
           >
@@ -258,7 +261,7 @@ export default function GridAdvantages() {
             <span aria-hidden className="inline-block translate-x-0.5">
               →
             </span>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
