@@ -7,63 +7,21 @@ const TownhouseExamples = () => {
   const houses = [
     {
       id: 1,
-      title: 'Таунхаус №1',
-      desc: '130 м² · 2 поверхи · 3 спальні · тераса',
+      title: 'Таунхауси',
+      desc: 'від 98 м² до 130 м²',
       image: '/townhouses/townhouse.jpg',
     },
     {
       id: 2,
-      title: 'Таунхаус №2',
-      desc: '145 м² · гараж · панорамні вікна',
-      image: '/townhouses/townhouse.jpg',
+      title: 'Будинки',
+      desc: 'від 80 м² до 150 м²',
+      image: '/advantages/advantages5.jpg',
     },
     {
       id: 3,
-      title: 'Таунхаус №3',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 4,
-      title: 'Таунхаус №4',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 5,
-      title: 'Таунхаус №5',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 6,
-      title: 'Таунхаус №5',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 7,
-      title: 'Таунхаус №5',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 8,
-      title: 'Таунхаус №5',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 9,
-      title: 'Таунхаус №5',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
-    },
-    {
-      id: 10,
-      title: 'Таунхаус №5',
-      desc: '120 м² · власний дворик · кухня-студія',
-      image: '/townhouses/townhouse.jpg',
+      title: 'Квартири',
+      desc: 'від 50 м² до 72 м²',
+      image: '/townhouses/flat.jpg',
     },
   ];
 
@@ -75,7 +33,7 @@ const TownhouseExamples = () => {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-8 text-center">
-          Таунхауси
+          Наша забудова
         </h2>
 
         <div className="flex justify-end gap-4 mb-4">

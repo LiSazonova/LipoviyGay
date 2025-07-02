@@ -13,6 +13,8 @@
 //           </p>
 //         </div>
 
+import { SlPhone } from 'react-icons/sl';
+
 //         {/* Контакти */}
 //         <div>
 //           <h4 className="text-lg font-semibold mb-4 text-gray-900">Контакти</h4>
@@ -73,7 +75,8 @@
 // };
 
 // export default Footer;
-
+import { CiMail } from 'react-icons/ci';
+import { BsGeoAltFill } from 'react-icons/bs';
 const Footer = () => {
   return (
     <footer
@@ -81,7 +84,7 @@ const Footer = () => {
       className="bg-[#3A8278] text-white pt-16 pb-8 px-4"
     >
       <div className="max-w-6xl mx-auto flex flex-row justify-between gap-10">
-        <div className="max-w-[500px]">
+        <div className="max-w-[450px]">
           <h3 className="text-2xl font-bold mb-4">
             Південний Центр Нерухомості
           </h3>
@@ -94,19 +97,46 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Контакти</h4>
           <ul className="text-sm space-y-2">
-            <li>
-              📞{' '}
-              <a href="tel:+380979748002" className="hover:underline">
-                +38 (097) 974-80-02
+            <li className="flex items-center gap-2 transition-transform duration-300">
+              <a
+                href="tel:+380979748002"
+                className="flex items-center gap-2 hover:text-yellow-400"
+              >
+                <SlPhone /> +38 (097) 974-80-02
               </a>
             </li>
-            <li>
-              📧{' '}
+            <li className="flex items-center gap-2 transition-transform duration-300">
+              <SlPhone />
+              <a
+                href="tel:+380992224158"
+                className="flex items-center gap-2 hover:text-yellow-400"
+              >
+                +38 (099) 222-41-58
+              </a>
+            </li>
+            <li className="flex items-center gap-2 transition-transform duration-300">
+              <a
+                href="tel:+380936221446"
+                className="flex items-center gap-2 hover:text-yellow-400"
+              >
+                <SlPhone /> +38 (093) 622-14-46
+              </a>
+            </li>
+            <li className="flex items-center gap-2 transition-transform duration-300">
+              <CiMail />
               <a href="mailto:info@realty.com" className="hover:underline">
-                info@realty.com
+                lipovijgay@ukr.net
               </a>
             </li>
-            <li>📍 Одеса, вул. Приморська, 12</li>
+            <li className="flex items-center gap-2 transition-transform duration-300">
+              <BsGeoAltFill />
+              <a
+                href="https://maps.app.goo.gl/LjKHZD3eFEiphnfX7"
+                target="_blank"
+              >
+                м.Одеса, вул. Космонавтів, 36, каб.701
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -126,6 +156,16 @@ const Footer = () => {
             <li>
               <a href="#townhouses" className="hover:underline">
                 Таунхауси
+              </a>
+            </li>
+            <li>
+              <a href="#townhouses" className="hover:underline">
+                Будинки
+              </a>
+            </li>
+            <li>
+              <a href="#townhouses" className="hover:underline">
+                Квартири
               </a>
             </li>
             <li>

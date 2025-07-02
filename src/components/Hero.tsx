@@ -106,7 +106,7 @@
 // export default Hero;
 
 import { motion } from 'framer-motion';
-import heroImage from '../assets/1.jpg';
+import heroImage from '../assets/townhouse.jpg';
 import Header from './Header';
 
 const Hero = () => {
@@ -120,6 +120,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-bottom"
         style={{
           backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url(${heroImage})`,
+          // backgroundImage: `url(${heroImage})`,
         }}
       />
 
@@ -155,9 +156,9 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="absolute bottom-50 right-6 text-white text-lg md:text-xl space-y-2 z-10"
       >
-        <li>◼︎ Територія котеджного містечка — 6 га</li>
+        <li>◼︎ Територія котеджного містечка — 2 га</li>
         <li>◼︎ Вибір планувань і оздоблення будинків</li>
-        <li>◼︎ Сонячна електроенергія</li>
+        {/* <li>◼︎ Сонячна електроенергія</li> */}
       </motion.ul>
     </section>
   );

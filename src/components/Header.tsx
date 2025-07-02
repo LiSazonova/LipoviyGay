@@ -37,21 +37,37 @@ const Header = () => {
           />
 
           {/* Контакты */}
-          <ul className="hidden md:flex items-center gap-6 text-[18px] font-medium">
-            <li className="transition-transform duration-300">
-              <a
-                href="tel:+380660000000"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
-                <SlPhone /> +38 (097) 974-80-02
-              </a>
-            </li>
-            <li>
-              <button className="bg-transparent border border-white text-[18px] md:text-lg py-3 px-6 rounded-md  hover:bg-white/30  transition">
-                <a href="#contact">Зв’язатись з нами</a>
-              </button>
-            </li>
-          </ul>
+          <div className="flex items-center gap-6 justify-between">
+            <button className="bg-transparent border border-white text-[18px] md:text-lg py-3 px-6 rounded-md  hover:bg-white/30  transition">
+              <a href="#contact">Зв’язатись з нами</a>
+            </button>
+            <ul className="flex flex-col items-center gap-2 text-[18px] font-medium">
+              <li className="transition-transform duration-300">
+                <a
+                  href="tel:+380979748002"
+                  className="flex items-center gap-2 hover:text-yellow-400"
+                >
+                  <SlPhone /> +38 (097) 974-80-02
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+380992224158"
+                  className="flex items-center gap-2 hover:text-yellow-400"
+                >
+                  <SlPhone /> +38 (099) 222-41-58
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+380936221446"
+                  className="flex items-center gap-2 hover:text-yellow-400"
+                >
+                  <SlPhone /> +38 (093) 622-14-46
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </motion.header>
     </div>
