@@ -4,8 +4,9 @@ import { SlPhone } from 'react-icons/sl';
 
 const navLinks = [
   { label: 'Головна', href: '/' },
-  { label: 'Таунхауси', href: '/townhouses' },
+  { label: 'Таунхауси', href: '/townhouse' },
   { label: 'Будинки', href: '/houses' },
+  { label: 'Квартири', href: '/apartments' },
   { label: 'Контакти', href: '/contacts' },
 ];
 const Header = () => {
@@ -17,7 +18,14 @@ const Header = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="absolute top-0 left-0 w-full z-20"
       >
-        <div className=" mx-auto px-6 pt-8 pb-8 flex justify-between items-center text-white bg-[#3a8278] backdrop-blur-md">
+        <div
+          className="mx-auto px-6 pt-8 pb-8 flex justify-between items-center text-white"
+          style={{
+            background:
+              'linear-gradient(to bottom, #3a8278 0%, rgba(58,130,120,0) 100%)',
+          }}
+        >
+          {/* <div className=" mx-auto px-6 pt-8 pb-8 flex justify-between items-center text-white bg-[#3a8278] backdrop-blur-md"> */}
           {/* Навигация */}
           <ul className="hidden md:flex items-center gap-6 text-[18px] font-medium">
             {navLinks.map((link) => (

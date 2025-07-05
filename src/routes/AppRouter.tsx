@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import MainLayout from '../layouts/MainLayout';
-import Townhouses from '../pages/Townhouses';
 import Houses from '../pages/Houses';
-import TownhousePage from '../pages/TownhousePage';
+import Apartments from '../pages/Apartments';
+import Townhouse from '../pages/Townhouse';
 
 const AppRouter = () => {
   return (
@@ -13,9 +13,9 @@ const AppRouter = () => {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/townhouses" element={<Townhouses />} />
-          <Route path="/townhouses/:id" element={<TownhousePage />} />
+          <Route path="/townhouse" element={<Townhouse />} />
           <Route path="/houses" element={<Houses />} />
+          <Route path="/apartments" element={<Apartments />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -81,7 +81,10 @@ const Footer = () => {
   return (
     <footer
       data-theme="dark"
-      className="bg-[#3A8278] text-white pt-16 pb-8 px-4"
+      className="text-black pt-16 pb-8 px-4"
+      style={{
+        background: 'linear-gradient(to bottom, #f3f4f6 5%, #3A8278 100%)',
+      }}
     >
       <div className="max-w-6xl mx-auto flex flex-row justify-between gap-10">
         <div className="max-w-[450px]">
@@ -144,27 +147,27 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Швидкі посилання</h4>
           <ul className="text-sm space-y-2">
             <li>
-              <a href="#about" className="hover:underline">
+              <a href="/#about" className="hover:underline">
                 Про нас
               </a>
             </li>
             <li>
-              <a href="#advantages" className="hover:underline">
+              <a href="/#advantages" className="hover:underline">
                 Переваги
               </a>
             </li>
             <li>
-              <a href="#townhouses" className="hover:underline">
+              <a href="/townhouse" className="hover:underline">
                 Таунхауси
               </a>
             </li>
             <li>
-              <a href="#townhouses" className="hover:underline">
+              <a href="/houses" className="hover:underline">
                 Будинки
               </a>
             </li>
             <li>
-              <a href="#townhouses" className="hover:underline">
+              <a href="/apartments" className="hover:underline">
                 Квартири
               </a>
             </li>
@@ -176,9 +179,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="mt-12 border-t pt-4 text-center text-xs text-white">
+      {/* <div className="mt-12 border-t pt-4 text-center text-xs text-white">
         © {new Date().getFullYear()} RunFox. Усі права захищені.
-      </div>
+      </div> */}
     </footer>
   );
 };
