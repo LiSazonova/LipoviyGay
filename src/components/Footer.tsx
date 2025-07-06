@@ -1,11 +1,19 @@
+// import { SlPhone } from 'react-icons/sl';
+// import { CiMail } from 'react-icons/ci';
+// import { BsGeoAltFill } from 'react-icons/bs';
 // const Footer = () => {
 //   return (
-//     <footer className="bg-[#F8F8F8] text-gray-700 pt-12 pb-6 px-8">
-//       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-//         {/* Logo + Description */}
-//         <div>
-//           <h3 className="text-2xl font-bold mb-4 text-gray-900">
-//             Південний центр
+//     <footer
+//       data-theme="dark"
+//       className="text-black pt-16 pb-8 px-4"
+//       style={{
+//         background: 'linear-gradient(to bottom, #f3f4f6 5%, #3A8278 100%)',
+//       }}
+//     >
+//       <div className="max-w-6xl mx-auto flex flex-row justify-between gap-10">
+//         <div className="max-w-[450px]">
+//           <h3 className="text-2xl font-bold mb-4">
+//             Південний Центр Нерухомості
 //           </h3>
 //           <p className="text-sm leading-relaxed">
 //             Надійна нерухомість в кращих районах Півдня України. Таунхауси,
@@ -13,70 +21,101 @@
 //           </p>
 //         </div>
 
-import { SlPhone } from 'react-icons/sl';
-
-//         {/* Контакти */}
 //         <div>
-//           <h4 className="text-lg font-semibold mb-4 text-gray-900">Контакти</h4>
+//           <h4 className="text-lg font-semibold mb-4">Контакти</h4>
 //           <ul className="text-sm space-y-2">
-//             <li>
-//               📞{' '}
-//               <a href="tel:+380123456789" className="hover:underline">
-//                 +38 (012) 345-67-89
+//             <li className="flex items-center gap-2 transition-transform duration-300">
+//               <a
+//                 href="tel:+380979748002"
+//                 className="flex items-center gap-2 hover:text-yellow-400"
+//               >
+//                 <SlPhone /> +38 (097) 974-80-02
 //               </a>
 //             </li>
-//             <li>
-//               📧{' '}
+//             <li className="flex items-center gap-2 transition-transform duration-300">
+//               <SlPhone />
+//               <a
+//                 href="tel:+380992224158"
+//                 className="flex items-center gap-2 hover:text-yellow-400"
+//               >
+//                 +38 (099) 222-41-58
+//               </a>
+//             </li>
+//             <li className="flex items-center gap-2 transition-transform duration-300">
+//               <a
+//                 href="tel:+380936221446"
+//                 className="flex items-center gap-2 hover:text-yellow-400"
+//               >
+//                 <SlPhone /> +38 (093) 622-14-46
+//               </a>
+//             </li>
+//             <li className="flex items-center gap-2 transition-transform duration-300">
+//               <CiMail />
 //               <a href="mailto:info@realty.com" className="hover:underline">
-//                 info@realty.com
+//                 lipovijgay@ukr.net
 //               </a>
 //             </li>
-//             <li>📍 Одеса, вул. Приморська, 12</li>
+//             <li className="flex items-center gap-2 transition-transform duration-300">
+//               <BsGeoAltFill />
+//               <a
+//                 href="https://maps.app.goo.gl/LjKHZD3eFEiphnfX7"
+//                 target="_blank"
+//               >
+//                 м.Одеса, вул. Космонавтів, 36, каб.701
+//               </a>
+//             </li>
 //           </ul>
 //         </div>
 
-//         {/* Навігація */}
 //         <div>
-//           <h4 className="text-lg font-semibold mb-4 text-gray-900">
-//             Швидкі посилання
-//           </h4>
+//           <h4 className="text-lg font-semibold mb-4">Швидкі посилання</h4>
 //           <ul className="text-sm space-y-2">
-//             <li>
-//               <a href="#about" className="hover:underline">
+//             {/* <li>
+//               <a href="/#about" className="hover:underline">
 //                 Про нас
 //               </a>
-//             </li>
+//             </li> */}
 //             <li>
-//               <a href="#advantages" className="hover:underline">
+//               <a href="/#advantages" className="hover:underline">
 //                 Переваги
 //               </a>
 //             </li>
 //             <li>
-//               <a href="#townhouses" className="hover:underline">
+//               <a href="/townhouse" className="hover:underline">
 //                 Таунхауси
 //               </a>
 //             </li>
 //             <li>
-//               <a href="#contacts" className="hover:underline">
+//               <a href="/houses" className="hover:underline">
+//                 Будинки
+//               </a>
+//             </li>
+//             <li>
+//               <a href="/apartments" className="hover:underline">
+//                 Квартири
+//               </a>
+//             </li>
+//             <li>
+//               <a href="/#contact" className="hover:underline">
 //                 Звʼязатись
 //               </a>
 //             </li>
 //           </ul>
 //         </div>
 //       </div>
-
-//       {/* Bottom line */}
-//       <div className="mt-12 border-t pt-4 text-center text-xs text-gray-500">
-//         © {new Date().getFullYear()} Південний центр нерухомості. Усі права
-//         захищені.
-//       </div>
+//       {/* <div className="mt-12 border-t pt-4 text-center text-xs text-white">
+//         © {new Date().getFullYear()} RunFox. Усі права захищені.
+//       </div> */}
 //     </footer>
 //   );
 // };
 
 // export default Footer;
+
+import { SlPhone } from 'react-icons/sl';
 import { CiMail } from 'react-icons/ci';
 import { BsGeoAltFill } from 'react-icons/bs';
+
 const Footer = () => {
   return (
     <footer
@@ -86,8 +125,9 @@ const Footer = () => {
         background: 'linear-gradient(to bottom, #f3f4f6 5%, #3A8278 100%)',
       }}
     >
-      <div className="max-w-6xl mx-auto flex flex-row justify-between gap-10">
-        <div className="max-w-[450px]">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10 text-center md:text-left">
+        {/* Блок описания */}
+        <div className="max-w-[450px] mx-auto md:mx-0">
           <h3 className="text-2xl font-bold mb-4">
             Південний Центр Нерухомості
           </h3>
@@ -97,45 +137,40 @@ const Footer = () => {
           </p>
         </div>
 
-        <div>
+        {/* Контакты */}
+        <div className="mx-auto md:mx-0">
           <h4 className="text-lg font-semibold mb-4">Контакти</h4>
           <ul className="text-sm space-y-2">
-            <li className="flex items-center gap-2 transition-transform duration-300">
-              <a
-                href="tel:+380979748002"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
-                <SlPhone /> +38 (097) 974-80-02
+            <li className="flex justify-center md:justify-start items-center gap-2">
+              <SlPhone className="text-[18px]" />
+              <a href="tel:+380979748002" className="hover:text-yellow-400">
+                +38 (097) 974-80-02
               </a>
             </li>
-            <li className="flex items-center gap-2 transition-transform duration-300">
-              <SlPhone />
-              <a
-                href="tel:+380992224158"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
+            <li className="flex justify-center md:justify-start items-center gap-2">
+              <SlPhone className="text-[18px]" />
+              <a href="tel:+380992224158" className="hover:text-yellow-400">
                 +38 (099) 222-41-58
               </a>
             </li>
-            <li className="flex items-center gap-2 transition-transform duration-300">
-              <a
-                href="tel:+380936221446"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
-                <SlPhone /> +38 (093) 622-14-46
+            <li className="flex justify-center md:justify-start items-center gap-2">
+              <SlPhone className="text-[18px]" />
+              <a href="tel:+380936221446" className="hover:text-yellow-400">
+                +38 (093) 622-14-46
               </a>
             </li>
-            <li className="flex items-center gap-2 transition-transform duration-300">
-              <CiMail />
-              <a href="mailto:info@realty.com" className="hover:underline">
+            <li className="flex justify-center md:justify-start items-center gap-2">
+              <CiMail className="text-[18px]" />
+              <a href="mailto:lipovijgay@ukr.net" className="hover:underline">
                 lipovijgay@ukr.net
               </a>
             </li>
-            <li className="flex items-center gap-2 transition-transform duration-300">
-              <BsGeoAltFill />
+            <li className="flex justify-center md:justify-start items-center gap-2">
+              <BsGeoAltFill className="text-[18px]" />
               <a
                 href="https://maps.app.goo.gl/LjKHZD3eFEiphnfX7"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 м.Одеса, вул. Космонавтів, 36, каб.701
               </a>
@@ -143,14 +178,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        {/* Быстрые ссылки */}
+        <div className="mx-auto md:mx-0">
           <h4 className="text-lg font-semibold mb-4">Швидкі посилання</h4>
           <ul className="text-sm space-y-2">
-            {/* <li>
-              <a href="/#about" className="hover:underline">
-                Про нас
-              </a>
-            </li> */}
             <li>
               <a href="/#advantages" className="hover:underline">
                 Переваги
@@ -179,9 +210,6 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      {/* <div className="mt-12 border-t pt-4 text-center text-xs text-white">
-        © {new Date().getFullYear()} RunFox. Усі права захищені.
-      </div> */}
     </footer>
   );
 };
