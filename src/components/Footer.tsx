@@ -146,11 +146,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Швидкі посилання</h4>
           <ul className="text-sm space-y-2">
-            <li>
+            {/* <li>
               <a href="/#about" className="hover:underline">
                 Про нас
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="/#advantages" className="hover:underline">
                 Переваги
@@ -172,7 +172,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
+              <a href="/#contact" className="hover:underline">
                 Звʼязатись
               </a>
             </li>
