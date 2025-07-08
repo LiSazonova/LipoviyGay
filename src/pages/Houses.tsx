@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ContactForm from '../components/ContactForm';
 import HouseCard from '../components/HouseCard';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Houses = () => {
   const [activePlan, setActivePlan] = useState<string | null>(null);
@@ -21,6 +22,11 @@ const Houses = () => {
   };
 
   const plans = [
+    {
+      title: 'Планування модульного будинку 91,8 м²',
+      image: '/plans/house_mod-91.8.jpg',
+    },
+    { title: 'Планування котеджу', image: '/plans/cottage.jpg' },
     { title: 'Планування будинку 152 м²', image: '/plans/house-100.jpg' },
   ];
 
@@ -94,23 +100,37 @@ const Houses = () => {
         </div>
       </div>
 
-      {activePlan && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center">
-          <div className="bg-white p-4 rounded-lg max-w-2xl w-full relative">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-black"
-              onClick={() => setActivePlan(null)}
+      <AnimatePresence>
+        {activePlan && (
+          <motion.div
+            key="plan-modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center"
+          >
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 30, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white p-4 rounded-lg max-w-2xl w-full relative"
             >
-              ✕
-            </button>
-            <img
-              src={activePlan}
-              alt="Планування"
-              className="w-full h-auto rounded-md"
-            />
-          </div>
-        </div>
-      )}
+              <button
+                className="absolute top-2 right-2 text-gray-500 hover:text-black text-lg"
+                onClick={() => setActivePlan(null)}
+              >
+                ✕
+              </button>
+              <img
+                src={activePlan}
+                alt="Планування"
+                className="w-full h-auto rounded-md"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {isContactOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center">
