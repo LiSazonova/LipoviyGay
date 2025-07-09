@@ -61,6 +61,7 @@
 import { motion } from 'framer-motion';
 import heroImage from '../assets/townhouse.jpg';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -94,12 +95,12 @@ const Hero = () => {
             Комфорт. Якість. Спокій поруч з природою.
           </p>
           <div className="flex justify-center">
-            <a
-              href="#contact"
+            <Link
+              to="#contact"
               className="border border-white text-sm md:text-[18px] py-2 md:py-3 px-4 md:px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:bg-white/30 transition"
             >
               Зв’язатись з нами
-            </a>
+            </Link>
           </div>
         </motion.div>
 

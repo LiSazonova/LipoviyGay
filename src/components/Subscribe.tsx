@@ -1,4 +1,5 @@
 import { FaTelegramPlane } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const SubscribeTelegram = () => {
   return (
@@ -17,15 +18,15 @@ const SubscribeTelegram = () => {
           <li>— Нові пропозиції планувань</li>
           <li>— Акції та спецпропозиції</li>
         </ul>
-        <a
-          href="https://t.me/dimria_subscribe_bot/?start=newbuildId=12417"
+        <Link
+          to="https://t.me/dimria_subscribe_bot/?start=newbuildId=12417"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-white bg-[#3A8278] hover:bg-[#30695f] transition px-6 py-3 rounded-full text-lg"
         >
           <FaTelegramPlane className="w-6 h-6" />
           Підписатись в Telegram
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const items = [
   {
@@ -138,7 +139,7 @@ export default function GridAdvantages() {
         <div className="mt-12 text-center">
           <h3 className="text-xl font-semibold mb-2">Потрібна консультація?</h3>
           <button className="border border-white text-[18px] text-white py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:border-[#3A8278] hover:bg-transparent hover:text-black transition">
-            <a href="#contact">Зв’язатись з нами</a>
+            <Link to="#contact">Зв’язатись з нами</Link>
           </button>
         </div>
       </div>

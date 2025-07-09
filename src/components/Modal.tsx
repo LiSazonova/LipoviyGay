@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const TelegramModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -99,15 +100,15 @@ const TelegramModal = () => {
                   <li>• Акції та спецпропозиції</li>
                 </ul>
 
-                <a
-                  href="https://t.me/dimria_subscribe_bot/?start=newbuildId=12417"
+                <Link
+                  to="https://t.me/dimria_subscribe_bot/?start=newbuildId=12417"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-[#3A8278] text-white px-4 py-2 rounded-md mt-4 hover:bg-[#2e685e]"
                 >
                   <FaTelegramPlane className="inline-block mr-2" />
                   Підписатися
-                </a>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
