@@ -214,8 +214,16 @@ const Townhouse = () => {
 
   const plans = [
     {
+      title: 'Планування таунхаусу 98 м²',
+      image: '/plans/townhouse-108.2.png',
+    },
+    {
       title: 'Планування таунхаусу 108.2 м²',
       image: '/plans/townhouse-108.2.png',
+    },
+    {
+      title: 'Планування таунхаусу 115 м²',
+      image: '/plans/townhouse-131.3.png',
     },
     {
       title: 'Планування таунхаусу 131.3 м²',
