@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { HiMenu, HiX } from 'react-icons/hi';
+import { AnimatePresence, motion } from 'framer-motion';
+import BurgerToggle from './BurgerToggle';
 import logo from '../assets/logo.png';
 import { SlPhone } from 'react-icons/sl';
 import { Link } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 
 const navLinks = [
   { label: 'Головна', href: '/' },
@@ -83,62 +84,21 @@ const Header = () => {
           </div>
 
           {/* Mobile Burger */}
-          <button
-            className="lg:hidden w-10 text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? (
-              <HiX className="text-[24px]" />
-            ) : (
-              <HiMenu className="text-[24px]" />
-            )}
-          </button>
+          <BurgerToggle
+            toggle={() => setMenuOpen(!menuOpen)}
+            isOpen={menuOpen}
+          />
         </div>
 
         {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-[#3a8278] text-white px-6 py-4 space-y-4 z-30">
-            <ul className="flex flex-col gap-4 text-lg">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="block hover:text-yellow-400"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6 space-y-2 text-sm">
-              <Link
-                to="tel:+380979748002"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
-                <SlPhone /> +38 (097) 974-80-02
-              </Link>
-              <Link
-                to="tel:+380992224158"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
-                <SlPhone /> +38 (099) 222-41-58
-              </Link>
-              <Link
-                to="tel:+380936221446"
-                className="flex items-center gap-2 hover:text-yellow-400"
-              >
-                <SlPhone /> +38 (093) 622-14-46
-              </Link>
-              <Link
-                to="#contact"
-                className="inline-block mt-4 border border-white text-white py-2 px-4 rounded hover:bg-white/30"
-              >
-                Зв’язатись з нами
-              </Link>
-            </div>
-          </div>
-        )}
+        <AnimatePresence>
+          {menuOpen && (
+            <MobileMenu
+              navLinks={navLinks}
+              onClose={() => setMenuOpen(false)}
+            />
+          )}
+        </AnimatePresence>
       </motion.header>
     </div>
   );
