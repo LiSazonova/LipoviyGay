@@ -23,14 +23,14 @@ const Header = () => {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="absolute top-0 left-0 w-full z-20"
+        className="fixed top-0 left-0 w-full z-50 text-white"
       >
         <div
-          className="mx-auto px-6 pt-6 pb-6 flex justify-between items-center text-white"
-          style={{
-            background:
-              'linear-gradient(to bottom, #3a8278 0%, rgba(58,130,120,0) 100%)',
-          }}
+          className={`mx-auto px-6 pt-6 pb-6 flex justify-between items-center transition-colors duration-500 ease-in-out ${
+            menuOpen
+              ? 'bg-[#3a8278]'
+              : 'bg-gradient-to-b from-[#3a8278] to-transparent'
+          }`}
         >
           {/* Desktop Nav */}
           <ul className="hidden lg:flex items-center gap-6 text-[18px] font-medium">
