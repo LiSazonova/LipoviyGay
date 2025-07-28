@@ -80,7 +80,6 @@ export default function GridAdvantages() {
       className="w-full bg-gray-100 py-20"
     >
       <div className="max-w-[1200px] mx-auto px-6">
-        {/* Заголовок */}
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-widest text-gray-400 font-medium">
             Чому ми?
@@ -135,7 +134,6 @@ export default function GridAdvantages() {
           )}
         </div>
 
-        {/* CTA */}
         <div className="mt-12 text-center">
           <h3 className="text-xl font-semibold mb-2">Потрібна консультація?</h3>
           <button className="border border-white text-[18px] text-white py-3 px-6 rounded-md bg-[#3A8278] backdrop-blur-md hover:border-[#3A8278] hover:bg-transparent hover:text-black transition">
