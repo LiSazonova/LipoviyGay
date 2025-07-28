@@ -5,10 +5,12 @@ import MainLayout from '../layouts/MainLayout';
 import Houses from '../pages/Houses';
 import Apartments from '../pages/Apartments';
 import Townhouse from '../pages/Townhouse';
+import ScrollToTop from '../components/ScrollToTop';
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
