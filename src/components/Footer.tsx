@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer
-      id="contact"
       data-theme="dark"
       className="text-black pt-16 pb-8 px-4"
       style={{

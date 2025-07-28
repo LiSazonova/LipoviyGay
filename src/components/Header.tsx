@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Таунхауси', href: '/townhouse' },
   { label: 'Будинки', href: '/houses' },
   { label: 'Квартири', href: '/apartments' },
+  { label: 'Контакти', href: '/#contact' },
 ];
 
 const Header = () => {
